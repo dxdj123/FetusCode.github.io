@@ -4,6 +4,7 @@
 		<title> Registration Page </title>
 	
 		<script type=4"text/javascript">
+
 			var THEUSER = document.forms["myForm"]["username"]. value;
 			var PASSWORD = document.forms["myForm"]["password"]. value;
 			var REPEATPASSWORD = document.forms["myForm"]["repeatpassword"]. value;
@@ -56,14 +57,15 @@
         </style>
 
 
-		<form>
+		<form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
 			<div id="fieldset">
 				<fieldset>
 					
 						<div class="line"><legend>Registration</legend><br>
 
-						<div class="line"><label for="THEUSER"> Username: </label><input type="THEUSER" name="Username" id="username"><br>
-						<div class="line"><label for="password"> password: </label><input type="password" name="PASSWORD" id="password"><br>
+						<div class="line"><label for="THEUSER"> Username: </label><input type="THEUSER" name="username"><br>
+						<div class="line"><label for="password"> password: </label><input type="password" name="password"><br>
 						<div class="line"><label for="repeatpassword"> Repeat password: </label><input type="repeatpassword" name="Repeat PASSWORD" id="repeatpassword">
 						<div class="line"><label for="email"> Email: </label><input type="email" id="email" name="email"></div><br>
 						
